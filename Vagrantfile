@@ -69,7 +69,7 @@ Vagrant.configure("2") do |config|
 #   trigger.info = "Trigger Execution ..."
 #   trigger.run = { path:"subscription-manager register --username <username> --password <password> --auto-attach"}
 # end
-  config.vm.define "springboot" do |chromeRH7|
+  config.vm.define "springboot" do |springboot|
     springboot.vm.box = "clouddood/RH7.5_baserepo"
     springboot.vm.hostname = "springboot"
     springboot.vm.network "private_network", ip: "192.168.60.167"
